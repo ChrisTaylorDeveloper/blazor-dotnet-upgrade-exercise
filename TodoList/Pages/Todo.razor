@@ -11,9 +11,16 @@
     }
 </ul>
 
-<input placeholder="Something todo" />
-<button>Add todo</button>
+<input placeholder="Something todo" @bind="newTodo" />
+<button @onclick="AddTodo">Add todo</button>
 
 @code {
+    private string? newTodo;
+
     private List<TodoItem> todos = new();
+
+    private void AddTodo()
+    {
+        // Todo: Add the todo
+    }
 }
