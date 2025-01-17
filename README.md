@@ -14,7 +14,7 @@ For wasmblazor
 docker run -it -p 5054:5054 --volume $(pwd):/source --workdir /source mcr.microsoft.com/dotnet/sdk:7.0
 ```
 
-Run with and watch
+Run and watch
 
 ```
 dotnet run watch
