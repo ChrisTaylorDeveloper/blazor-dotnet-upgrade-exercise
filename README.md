@@ -1,4 +1,4 @@
-# Blazor Todo WASM dotnet 7.0
+# Blazor .NET upgrade exercise
 
 See <https://learn.microsoft.com/en-us/aspnet/core/blazor/tutorials/build-a-blazor-app?view=aspnetcore-7.0>
 
