@@ -8,11 +8,11 @@ This article followed initially, to create the apps
 Remember to publish container port to host
 
 ```
-docker run -it -p <change-me>:<change-me> --volume $(pwd):/source --workdir /source mcr.microsoft.com/dotnet/sdk:7.0
+docker run -it --rm -p <change-me>:<change-me> --volume $(pwd):/source --workdir /source mcr.microsoft.com/dotnet/sdk:7.0
 ```
 
 ```
-docker run -it -p <change-me>:<change-me> --volume $(pwd):/source --workdir /source mcr.microsoft.com/dotnet/sdk:8.0
+docker run -it --rm -p <change-me>:<change-me> --volume $(pwd):/source --workdir /source mcr.microsoft.com/dotnet/sdk:8.0
 ```
 
 ## Run the apps
