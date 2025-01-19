@@ -1,0 +1,25 @@
+@page "/reference-parent"
+@rendermode InteractiveServer
+
+<div>
+    <button @onclick="@(() => _childComp1!.ChildMethod(7))">
+        Call <code>ReferenceChild.ChildMethod</code> with an arg 7
+    </button>
+    <ReferenceChild @ref="_childComp1" />
+</div>
+
+<div>
+    <button @onclick="CallChildMethod">
+        Call <code>ReferenceChild.ChildMethod</code> with an arg 5
+    </button>
+    <ReferenceChild @ref="_childComp2" />
+</div>
+
+@code {
+    private ReferenceChild? _childComp1;
+    private ReferenceChild? _childComp2;
+    private void CallChildMethod()
+    {
+        _childComp2!.ChildMethod(5);
+    }
+}
